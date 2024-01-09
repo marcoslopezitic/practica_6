@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cyclan_motors SYSTEM "Practica_6_validar.dtd">
+<cyclan_motors>
+    <Informacion>
+        <email>cyclan@gmail.com</email>
+        <telefono>617454655</telefono>
+        <nombre_empresa>Cyclan</nombre_empresa>
+    </Informacion>
+    <Motos>
+        <moto id="M001">
+            <stock>7</stock>
+            <precio>12.900€</precio>
+            <color>negro</color>
+            <marca>Kawasaki</marca>
+            <modelo>H2</modelo>
+        </moto>
+        <moto id="M002">
+            <stock>4</stock>
+            <precio>17.900€</precio>
+            <color>azul</color>
+            <marca>yamaha</marca>
+            <modelo>R1</modelo>
+        </moto>
+        <!-- Moto opcional -->
+        <moto id="M003" optional="yes">
+            <stock>3</stock>
+            <precio>20.000€</precio>
+            <color>negro</color>
+            <marca>Ducati</marca>
+            <modelo>Panigale</modelo>
+        </moto>
+    </Motos>
+    <Clientes>
+        <!-- Un client com a mínim, més opcional -->
+        <cliente clienteID="C001">
+            <Nombres>
+                <Nombre>Juan Pedro</Nombre>
+                <Apellidos>
+                    <segundo_apellido>Jímenez</segundo_apellido>
+                </Apellidos>
+            </Nombres>
+            <moto_comprada refMoto="M001">H2</moto_comprada>
+            <email>juan.pedro@gmail.com</email>
+            <telefono>689123459</telefono>
+            <DNI>12345678A</DNI>
+        </cliente>
+    </Clientes>
+</cyclan_motors>
